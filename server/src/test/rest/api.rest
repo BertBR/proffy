@@ -1,0 +1,39 @@
+POST http://127.0.0.1:3333/classes HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "Zé",
+  "avatar": "https://avatars0.githubusercontent.com/u/29619309?s=460&u=cdbf9ec14a4bf2b440f47089b44820f847c311e2&v=4",
+  "whatsapp": "8499991234",
+  "bio": "Professor de desenho",
+  "subject": "Photoshop/Corel Draw",
+  "cost": 50,
+  "schedules": [
+    {
+      "week_day": 2, "from": "8:20", "to": "13:00"
+    },
+    {
+      "week_day": 5, "from": "07:30", "to": "11:40"
+    },
+    {
+      "week_day": 6, "from": "8:00", "to": "18:00"
+    }
+  ]
+
+}
+
+###
+http://127.0.0.1:3333/classes?week_day=6&subject=Photoshop/Corel%20Draw&time=17:59 
+
+
+
+###
+POST http://127.0.0.1:3333/connections HTTP/1.1
+Content-Type: application/json
+
+{
+  "teacherId": "bc324851-4fb9-450f-a468-2d42b1c4ef56"
+}
+
+###
+http://127.0.0.1:3333/connections

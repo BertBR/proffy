@@ -23,7 +23,7 @@ Content-Type: application/json
 }
 
 ###
-http://127.0.0.1:3333/classes?week_day=6&subject=Photoshop/Corel%20Draw&time=17:59 
+http://127.0.0.1:3333/classes?week_day=1&subject=Matemática&time=08:00
 
 
 
